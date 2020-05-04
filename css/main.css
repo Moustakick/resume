@@ -1,0 +1,33 @@
+*{
+  --mdc-typography-font-family: 'Muli';
+}
+
+#site {
+  padding: 0px 15% ;
+}
+
+#header {
+  text-align: center;
+}
+
+#nav {
+  padding: 40px;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: block;
+}
+
+.nav-selection {
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+#subtitle {
+  text-transform: uppercase;
+}
+
+#site-title {
+  text-transform: uppercase;
+}
