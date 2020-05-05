@@ -3,31 +3,87 @@
 }
 
 #site {
-  padding: 0px 15% ;
+  padding: 0px 30% ;
 }
 
 #header {
   text-align: center;
 }
 
-#nav {
-  padding: 40px;
-}
-
-.nav-list {
-  list-style-type: none;
-  display: block;
-}
-
-.nav-selection {
-  display: inline-block;
-  margin: 0px 10px;
+#site-title {
+  text-transform: uppercase;
 }
 
 #subtitle {
   text-transform: uppercase;
 }
 
-#site-title {
-  text-transform: uppercase;
+#nav {
+  padding: 20px 40px;
+}
+
+#social-nav {
+  padding: 20px 0px;
+}
+
+.nav-list, .social-list {
+  list-style-type: none;
+  display: block;
+  font-weight: bold;
+}
+
+.nav-selection {
+  display: inline-block;
+  margin: 0px 5%;
+}
+
+.hyperlink-nav  {
+  text-decoration: none;
+}
+.hyperlink-active, .hyperlink-nav:hover {
+  color: rgb(125, 125, 125) !important;
+}
+
+.hyperlink-nav:visited {
+  color: #000000;
+}
+
+.social-list {
+  display: block;
+}
+
+.social-selection {
+  display: inline-block;
+  margin: 0px 3%;
+}
+
+.fa-linkedin-square {
+  color: #0e76a8;
+}
+
+.fa-github-square {
+  color: #211F1F;
+}
+
+.fa-twitter-square {
+  color: #1DA1F2;
+}
+
+.fa-facebook-square {
+  color: #3b5998;
+}
+
+.so-icon {
+  width: 3.35em;
+  margin-bottom: -10px;
+}
+
+.mastodon-icon {
+  width: 2.4em;
+  margin-bottom: -3px;
+}
+
+.fa-github-square:hover, .fa-twitter-square:hover, .fa-linkedin-square:hover, .fa-facebook-square:hover, .so-icon:hover, .mastodon-icon:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }
