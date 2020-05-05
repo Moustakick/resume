@@ -3,7 +3,9 @@
 }
 
 #site {
-  padding: 0px 30% ;
+  padding: 0 80px; ;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 #header {
@@ -12,6 +14,7 @@
 
 #site-title {
   text-transform: uppercase;
+  font-weight: bolder;
 }
 
 #subtitle {
@@ -42,9 +45,10 @@
 }
 .hyperlink-active, .hyperlink-nav:hover {
   color: rgb(125, 125, 125) !important;
+  text-decoration: underline;
 }
 
-.hyperlink-nav:visited {
+.hyperlink-nav:visited, .hyperlink-nav:link {
   color: #000000;
 }
 
@@ -86,4 +90,8 @@
 .fa-github-square:hover, .fa-twitter-square:hover, .fa-linkedin-square:hover, .fa-facebook-square:hover, .so-icon:hover, .mastodon-icon:hover {
   opacity: 0.6;
   cursor: pointer;
+}
+
+.mdc-list-divider {
+  margin: 30px;
 }
