@@ -1,3 +1,4 @@
+// Permet aux article d'avoir un effet d'accordeon
 document.querySelectorAll('.expand-arrow').forEach(expand => {
   expand.addEventListener('click', () => {
     const expandable = expand.previousElementSibling;

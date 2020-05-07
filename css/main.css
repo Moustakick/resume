@@ -28,7 +28,18 @@
 
 #nav {
   padding: 20px 40px;
+
 }
+
+/* #nav-alt {
+  height: 100px;
+  width: 50px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  visibility: hidden;
+  text-align: center;
+} */
 
 #social-nav {
   padding: 20px 0px;
@@ -143,7 +154,7 @@
 }
 
 .article-more {
-  transition: max-height 0.5s;
+  transition: max-height 0.3s;
   overflow: hidden;
   max-height: 0;
   padding: 0 25px;
@@ -151,5 +162,18 @@
 
 .article-active {
   background-color: #f1f1f1;
-  border-radius: 5px;
 }
+
+.article{
+  border-bottom: 0.1rem solid #f1f1f1;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  padding-top: 1px;
+  margin-top: 5px;
+}
+
+/* .nav-alt-list{
+  margin: 0px;
+  padding: 0px;
+  font-size: 0.7em;
+} */
