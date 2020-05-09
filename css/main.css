@@ -16,6 +16,13 @@ body {
 
 }
 
+.page-up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  visibility: hidden;
+}
+
 #header {
   text-align: center;
   right: 0;
@@ -38,6 +45,7 @@ body {
 }
 
 .titles {
+  text-align: center;
   padding-top: 25vh;
 }
 
@@ -57,7 +65,7 @@ body {
 
 #nav {
   padding: 20px 40px;
-
+  
 }
 
 /* #nav-alt {
@@ -86,9 +94,19 @@ body {
 }
 
 #contact {
-  padding: 100px 0;
-  margin-top: 30px;
+  padding: 100px 30px;
+  /* margin-top: 30px; */
   background-image: url(../ressources/backgrounds/mountains.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#travaux {
+  padding: 100px 30px;
+  margin-top: 30px;
+  background-image: url(../ressources/backgrounds/travaux.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -100,6 +118,27 @@ body {
   padding: 0 80px; ;
   max-width: 800px;
   margin: 0 auto;
+}
+
+#travaux-section {
+  text-align: justify;
+  padding: 0 80px; ;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  color: white;
+
+}
+
+.background-travaux {
+  background: #282E34;
+}
+
+#footer {
+  margin-top: 30px;
+  padding: 20px 80px;
+  background: #02062d;
+  color: white;
 }
 
 .nav-list, .social-list {
@@ -187,6 +226,14 @@ body {
   text-align: justify;
 }
 
+.text-transition-travaux {
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
 .mdc-typography--headline5 {
   text-align: center;
   text-transform: uppercase;
@@ -226,6 +273,10 @@ body {
   position: absolute;
   bottom: 5px;
   font-size: 60px;
+  left: 0;
+  color: white;
+  width: 100%;
+  text-align: center;
 }
 
 .article-more {
@@ -247,6 +298,13 @@ body {
   margin-top: 5px;
 }
 
+#travaux-section .article {
+  border-bottom: 0;
+  transition: background-color 0.3s ease;
+  padding-top: 1px;
+  margin-top: 0px;
+}
+
 .link-arrow {
   color: white;
 }
@@ -261,7 +319,7 @@ body {
 
 /* Contact */
 
-.test {
+.fullwidth {
   width: 100%;
 }
 
@@ -274,4 +332,8 @@ body {
 .form-buttons {
   margin:3px;
   margin-top: -10px;
+}
+
+.fa-10x {
+  font-size: 10rem;
 }

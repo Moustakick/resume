@@ -1,20 +1,19 @@
 <!doctype html>
 <html lang="fr">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <head>
-      <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.css" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.css">
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link rel="icon" href="./ressources/favicon/favicon.ico" />
-      <link rel="stylesheet" href="./css/main.css">
-      <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.js"></script>
-    </head>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="./css/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="./ressources/favicon/favicon.ico" />
+    <link href="./css/main.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.js"></script>
+    <script src="./scripts/page-up.js"></script></script>
     <title>Maxime Oçafrain</title>
   </head>
   <body class="mdc-typography">
+    <button id="page-up" onclick="goToAnchor('header')" class="mdc-icon-button material-icons page-up">arrow_upward</button>
     <div id="site">
       <header id="header">
         <div class="titles">
@@ -22,45 +21,27 @@
             Maxime Oçafrain
           </h1>
           <h2 id="subtitle" class="mdc-typography--headline5">Développeur logiciel ∙ Administrateur systèmes et réseaux </h2>
+          <p><b>Site en conception</b></p>
         </div>
         <nav id="nav">
           <ul class="nav-list mdc-typography--subtitle2">
             <li class="nav-selection">
-              <a href="#bio" class="hyperlink-active hyperlink-nav">BIO</a>
+              <a href="#bio" class="hyperlink-nav">BIO</a>
             </li>
             <li class="nav-selection">
-              <a href="#" class="hyperlink-nav">TRAVAUX</a>
+              <a href="#travaux" class="hyperlink-nav">TRAVAUX</a>
             </li>
             <li class="nav-selection">
               <a href="#contact" class="hyperlink-nav">CONTACT</a>
             </li>
             <li class="nav-selection">
-              <a href="#" class="hyperlink-nav">CV</a>
+              <a href="#" onclick="alert('Pas encore disponible.')" class="hyperlink-nav">CV</a>
             </li>
             <li class="nav-selection">
-              <a href="#" class="hyperlink-nav">AUTRE</a>
+              <a href="#" onclick="alert('Pas encore disponible.')" class="hyperlink-nav">AUTRE</a>
             </li>
           </ul>
         </nav>
-        <!-- <nav id="nav-alt">
-          <ul class="nav-alt-list mdc-typographysubtitle2">
-            <li class="nav-selection">
-              <a href="./" class="hyperlink-active hyperlink-nav">BIO</a>
-            </li>
-            <li class="nav-selection">
-              <a href="work.html" class="hyperlink-nav">TRAVAUX</a>
-            </li>
-            <li class="nav-selection">
-              <a href="contact.html" class="hyperlink-nav">CONTACT</a>
-            </li>
-            <li class="nav-selection">
-              <a href="cv.html" class="hyperlink-nav">CV</a>
-            </li>
-            <li class="nav-selection">
-              <a href="autre.html" class="hyperlink-nav">AUTRE</a>
-            </li>
-          </ul>
-        </nav> -->
         <nav id="social-nav">
           <ul class="social-list">
             <li class="social-selection">
@@ -85,23 +66,27 @@
             </li>
             <li class="social-selection">
               <a href="https://stackoverflow.com/users/13476274/maxime-ocafrain">
-                <img src="./ressources/so-icon.svg" class="so-icon">
+                <img src="./ressources/so-icon.svg" alt="icone stackoverflow" class="so-icon">
               </a>
             </li>
             <li class="social-selection">
               <a href="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/nope-design-template-0ee8e364d0f1e4ff33cd944a93a12960_screen.jpg?ts=1561391130">
-                <img src="./ressources/mastodon-icon.svg" class="mastodon-icon">
+                <img src="./ressources/mastodon-icon.svg" alt="icone mastodon" class="mastodon-icon">
               </a>
             </li>
           </ul>
         </nav>
-        <a href="#bio" class="link-arrow">
-          <span class="material-icons expand-arrow-header">expand_more</span>
-        </a>
+        <div class="link-arrow">
+          <a href="#bio" class="">
+            <span class="material-icons expand-arrow-header">expand_more</span>
+          </a>
+        </div>
       </header>
+
+
       <div id="bio">
+        <h2 class="mdc-typography--headline4 presentation">Description</h2>
         <p class="mdc-typography--body1 presentation">
-          <b>Site en conception.</b>
           <br>
           Actuellement étudiant alternant pour la licence professionnelle ADSILLH (Administrateur et Développeur de Systèmes Informatiques à base de Logiciels Libres et Hybrides), et passionné par les nouvelles technologies. Mon objectif actuel est de poursuivre mes études dans le développement logiciel.
           <br>
@@ -111,7 +96,6 @@
       <section id="content">
         <article id="mon-profil" class="article">
           <h3 id="mon-profil-title" class="mdc-typography--headline5 article-title">Mon profil</h3>
-
           <div class="article-header">
             <div class="mdc-layout-grid article-container">
               <div class="mdc-layout-grid__inner">
@@ -169,66 +153,98 @@
           <span class="material-icons expand-arrow">expand_more</span>
         </article>
       </section>
-      <div id="contact">
-        <p class="mdc-typography--body1 text-transition-contact">
-          <b>Contact.</b>
+
+
+      <div id="travaux">
+        <h2 class="mdc-typography--headline4 text-transition-travaux">Mes travaux</h2>
+        <p class="mdc-typography--body1 text-transition-travaux">
           <br>
-          Evidemment pour le contact je ne vais pas librement donner mon adresse mail, ça serait un appel aux spam bots. A la place j'ai conçu un petit formulaire dont je récupère le contenu grâce à un web service PHP.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <div class="background-travaux">
+        <section id="travaux-section">
+          <article id="github" class="article">
+            <h3 id="github-title" class="mdc-typography--headline5 article-title">Github</h3>
+            <div class="article-header">
+              <div class="mdc-layout-grid article-container">
+                <div class="mdc-layout-grid__inner">
+                  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+                    <a href="https://github.com/Moustakick">
+                      <i class="fa fa-github-square fa-10x" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-9">
+                    <p class="mdc-typography--body1 article-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+
+
+      <div id="contact">
+        <h2 class="mdc-typography--headline4 text-transition-contact">Contactez-moi</h2>
+        <p class="mdc-typography--body1 text-transition-contact">
+          <br>
+            Vous pouvez me contacter pour tout ce que vous voulez. Je suis disponible et je tacherai de répondre le plus rapidement possible.
           <br>
           Un mail vous sera envoyé pour confirmer l'envoi de votre message. Et je recevrai moi-même un mail avec le contenu de votre message.
         </p>
       </div>
       <section id="contact-section">
         <p class="mdc-typography--body1">
-          Je suis désolé le service est un peu lent étant donné que je l'héberge moi-même sur une connexion ADSL, cependant il reste fonctionnel. Vous pouvez trouver en haut de page d'autres moyen de contact comme Linkedin ou Github.
+          Je suis désolé le service est un peu lent étant donné que je l'héberge moi-même sur une connexion ADSL et un raspberrypi, cependant il reste fonctionnel. Vous pouvez trouver en haut de page d'autres moyen de contact comme Linkedin ou Github.
         </p>
         <article class="formulaire-contact">
           <form class="" action="http://service.maximeocafrain.com/WS/form_to_mail.php" method="post">
             <div class="mdc-layout-grid">
               <div class="mdc-layout-grid__inner">
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
-                  <label class="mdc-text-field mdc-text-field--outlined test" test data-mdc-auto-init="MDCTextField">
-                    <input type="text" name="nom" class="mdc-text-field__input" aria-labelledby="my-label-id" required>
+                  <label class="mdc-text-field mdc-text-field--outlined fullwidth" data-mdc-auto-init="MDCTextField">
+                    <input type="text" name="nom" class="mdc-text-field__input" aria-labelledby="nom" required>
                     <span class="mdc-notched-outline">
                       <span class="mdc-notched-outline__leading"></span>
                       <span class="mdc-notched-outline__notch">
-                        <span class="mdc-floating-label" id="my-label-id">Nom</span>
+                        <span class="mdc-floating-label" id="nom">Nom</span>
                       </span>
                       <span class="mdc-notched-outline__trailing"></span>
                     </span>
                   </label>
                 </div>
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
-                  <label class="mdc-text-field mdc-text-field--outlined test" test data-mdc-auto-init="MDCTextField">
-                    <input type="text" name="prenom" class="mdc-text-field__input" aria-labelledby="my-label-id">
+                  <label class="mdc-text-field mdc-text-field--outlined fullwidth" data-mdc-auto-init="MDCTextField">
+                    <input type="text" name="prenom" class="mdc-text-field__input" aria-labelledby="prenom">
                     <span class="mdc-notched-outline">
                       <span class="mdc-notched-outline__leading"></span>
                       <span class="mdc-notched-outline__notch">
-                        <span class="mdc-floating-label" id="my-label-id">Prenom</span>
+                        <span class="mdc-floating-label" id="prenom">Prenom</span>
                       </span>
                       <span class="mdc-notched-outline__trailing"></span>
                     </span>
                   </label>
                 </div>
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
-                  <label class="mdc-text-field mdc-text-field--outlined test" test data-mdc-auto-init="MDCTextField">
-                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="mail" class="mdc-text-field__input" aria-labelledby="my-label-id" title="Merci de compléter ce champ avec une adresse mail correcte." required>
+                  <label class="mdc-text-field mdc-text-field--outlined fullwidth" data-mdc-auto-init="MDCTextField">
+                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="mail" class="mdc-text-field__input" aria-labelledby="mail" title="Merci de compléter ce champ avec une adresse mail correcte." required>
                     <span class="mdc-notched-outline">
                       <span class="mdc-notched-outline__leading"></span>
                       <span class="mdc-notched-outline__notch">
-                        <span class="mdc-floating-label" id="my-label-id">Mail</span>
+                        <span class="mdc-floating-label" id="mail">Mail</span>
                       </span>
                       <span class="mdc-notched-outline__trailing"></span>
                     </span>
                   </label>
                 </div>
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
-                  <label class="mdc-text-field mdc-text-field--textarea test" test data-mdc-auto-init="MDCTextField" >
-                  <textarea class="mdc-text-field__input" name="message" aria-labelledby="my-label-id" rows="8" cols="40" maxlength="300" title="Merci d'entrer un message à envoyer." Required></textarea>
+                  <label class="mdc-text-field mdc-text-field--textarea fullwidth" data-mdc-auto-init="MDCTextField" >
+                  <textarea class="mdc-text-field__input" name="message" aria-labelledby="message" rows="8" cols="40" maxlength="300" title="Merci d'entrer un message à envoyer." Required></textarea>
                   <span class="mdc-notched-outline">
                     <span class="mdc-notched-outline__leading"></span>
                     <span class="mdc-notched-outline__notch">
-                      <span class="mdc-floating-label" id="my-label-id">Message</span>
+                      <span class="mdc-floating-label" id="message">Message</span>
                     </span>
                     <span class="mdc-notched-outline__trailing"></span>
                   </span>
@@ -254,17 +270,23 @@
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
-
           </form>
         </article>
       </section>
 
 
-      <footer class="mdc-typography--caption">
-        ©Copyright 2050 par personne. Aucun droits reversés.
+      <footer id="footer" class="mdc-typography--caption">
+        ©Copyright 2050 par personne. Aucun droit reversé. Sources du site disponibles sur <a href="https://github.com/Moustakick/site-portfolio">Github</a>.
+        <br>
+        Credits :
+        <ul>
+          <li>Photo (#Presentation) by Kai Pilger on Unsplash</li>
+          <li>Photo (#Travaux) by Alexandre Debiève on Unsplash</li>
+          <li>Photo (#Contact) by Paul Earle on Unsplash</li>
+        </ul>
+
       </footer>
     </div>
 

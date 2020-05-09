@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <head>
+      <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.css">
+      <link rel="icon" href="./ressources/favicon/favicon.ico" />
+      <link rel="stylesheet" href="./css/main.css">
+      <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.js"></script>
+    </head>
+    <title>Maxime Oçafrain</title>
+  </head>
+  <body class="mdc-typography">
+    <div id="site">
+      <header id="header">
+        <h1 id="site-title" class="mdc-typography--headline2">
+          Maxime Oçafrain
+        </h1>
+        <p id="subtitle" class="mdc-typography--headline5">Développeur logiciel ∙ Administrateur systèmes et réseaux </p>
+        <nav id="nav">
+          <ul class="nav-list mdc-typography--subtitle2">
+            <li class="nav-selection">
+              <a href="./" class="hyperlink-nav">BIO</a>
+            </li>
+            <li class="nav-selection">
+              <a href="work.html" class="hyperlink-nav">TRAVAUX</a>
+            </li>
+            <li class="nav-selection">
+              <a href="contact.html" class="hyperlink-nav hyperlink-active">CONTACT</a>
+            </li>
+            <li class="nav-selection">
+              <a href="cv.html" class="hyperlink-nav">CV</a>
+            </li>
+            <li class="nav-selection">
+              <a href="autre.html" class="hyperlink-nav">AUTRE</a>
+            </li>
+          </ul>
+        </nav>
+        <nav id="social-nav">
+          <ul class="social-list">
+            <li class="social-selection">
+              <a href="https://www.linkedin.com/in/maxime-o%C3%A7afrain-576ab4186/?originalSubdomain=fr">
+                <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="social-selection">
+              <a href="https://twitter.com/DatMaxime">
+                <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="social-selection">
+              <a href="https://www.facebook.com/">
+                <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="social-selection">
+              <a href="https://github.com/Moustakick">
+                <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="social-selection">
+              <a href="https://stackoverflow.com/users/13476274/maxime-ocafrain">
+                <img src="./ressources/so-icon.svg" class="so-icon">
+              </a>
+            </li>
+            <li class="social-selection">
+              <a href="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/nope-design-template-0ee8e364d0f1e4ff33cd944a93a12960_screen.jpg?ts=1561391130">
+                <img src="./ressources/mastodon-icon.svg" class="mastodon-icon">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section id="content">
+        <p class="mdc-typography--body1">
+          Il faut que je crée un formulaire sécurisé, mais pour l'instant, je suis limité par l'utilisation de Github Pages : des pages web statique, sans back php, ni autres services.
+        </p>
+        <article class="formulaire-contact">
+          <form class="" action="http://service.maximeocafrain.com/WS/form_to_mail.php" method="post">
+            <div class="mdc-layout-grid">
+              <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+                  <label class="mdc-text-field mdc-text-field--outlined test" test data-mdc-auto-init="MDCTextField">
+                    <input type="text" name="nom" class="mdc-text-field__input" aria-labelledby="my-label-id" required>
+                    <span class="mdc-notched-outline">
+                      <span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="my-label-id">Nom</span>
+                      </span>
+                      <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+                  </label>
+                </div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+                  <label class="mdc-text-field mdc-text-field--outlined test" test data-mdc-auto-init="MDCTextField">
+                    <input type="text" name="prenom" class="mdc-text-field__input" aria-labelledby="my-label-id">
+                    <span class="mdc-notched-outline">
+                      <span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="my-label-id">Prenom</span>
+                      </span>
+                      <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+                  </label>
+                </div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+                  <label class="mdc-text-field mdc-text-field--outlined test" test data-mdc-auto-init="MDCTextField">
+                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="mail" class="mdc-text-field__input" aria-labelledby="my-label-id" title="Merci de compléter ce champ avec une adresse mail correcte." required>
+                    <span class="mdc-notched-outline">
+                      <span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="my-label-id">Mail</span>
+                      </span>
+                      <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+                  </label>
+                </div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+                  <label class="mdc-text-field mdc-text-field--textarea test" test data-mdc-auto-init="MDCTextField" >
+                  <textarea class="mdc-text-field__input" name="message" aria-labelledby="my-label-id" rows="8" cols="40" maxlength="300" title="Merci d'entrer un message à envoyer." Required></textarea>
+                  <span class="mdc-notched-outline">
+                    <span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch">
+                      <span class="mdc-floating-label" id="my-label-id">Message</span>
+                    </span>
+                    <span class="mdc-notched-outline__trailing"></span>
+                  </span>
+                </label>
+                <div class="mdc-text-field-helper-line">
+                  <div class="mdc-text-field-character-counter">0 / 300</div>
+                </div>
+                </div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+                  <div class="button-container">
+                    <div class="mdc-touch-target-wrapper form-buttons">
+                      <button type="reset" class="mdc-button">
+                         <div class="mdc-button__ripple"></div>
+                         <span class="mdc-button__label">Reset</span>
+                      </button>
+                    </div>
+                    <div class="mdc-touch-target-wrapper form-buttons">
+                      <button type="submit" name="submit" class="mdc-button mdc-button--raised">
+                        <div class="mdc-button__ripple"></div>
+                        <span class="mdc-button__label">Envoyer</span>
+                        <div class="mdc-button__touch"></div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </form>
+        </article>
+      </section>
+    </div>
+
+    <script type="text/javascript">
+      window.mdc.autoInit();
+    </script>
+  </body>
+</html>
