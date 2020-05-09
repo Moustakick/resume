@@ -8,12 +8,12 @@ document.querySelectorAll('.expand-arrow').forEach(expand => {
     if(expand.innerHTML == "expand_less"){
       // panel is closed
       expand.innerHTML = "expand_more";
-      expandable.style.maxHeight = '0px';
+      expandable.style.maxHeight = '0';
     }
     else {
       // panel is open
       expand.innerHTML = "expand_less";
-      expandable.style.maxHeight = '150px';
+      expandable.style.maxHeight = '300px';
       // parent.style.backgroundColor = "lightgrey";
     }
   });

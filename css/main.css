@@ -2,6 +2,7 @@
   --mdc-typography-font-family: 'Muli';
   --mdc-theme-primary: #1a237e;
   --mdc-theme-on-primary: #ffffff;
+  --mdc-typography-body1-font-size: 1rem;
 }
 
 html {
@@ -46,7 +47,7 @@ body {
 
 .titles {
   text-align: center;
-  padding-top: 25vh;
+  padding-top: 15vh;
 }
 
 #site-title {
@@ -65,7 +66,7 @@ body {
 
 #nav {
   padding: 20px 40px;
-  
+
 }
 
 /* #nav-alt {
