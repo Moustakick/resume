@@ -17,26 +17,28 @@
   <body class="mdc-typography">
     <div id="site">
       <header id="header">
-        <h1 id="site-title" class="mdc-typography--headline2">
-          Maxime Oçafrain
-        </h1>
-        <h2 id="subtitle" class="mdc-typography--headline5">Développeur logiciel ∙ Administrateur systèmes et réseaux </h2>
+        <div class="titles">
+          <h1 id="site-title" class="mdc-typography--headline2">
+            Maxime Oçafrain
+          </h1>
+          <h2 id="subtitle" class="mdc-typography--headline5">Développeur logiciel ∙ Administrateur systèmes et réseaux </h2>
+        </div>
         <nav id="nav">
           <ul class="nav-list mdc-typography--subtitle2">
             <li class="nav-selection">
-              <a href="./" class="hyperlink-active hyperlink-nav">BIO</a>
+              <a href="#bio" class="hyperlink-active hyperlink-nav">BIO</a>
             </li>
             <li class="nav-selection">
-              <a href="work.html" class="hyperlink-nav">TRAVAUX</a>
+              <a href="#" class="hyperlink-nav">TRAVAUX</a>
             </li>
             <li class="nav-selection">
-              <a href="contact.html" class="hyperlink-nav">CONTACT</a>
+              <a href="#contact" class="hyperlink-nav">CONTACT</a>
             </li>
             <li class="nav-selection">
-              <a href="cv.html" class="hyperlink-nav">CV</a>
+              <a href="#" class="hyperlink-nav">CV</a>
             </li>
             <li class="nav-selection">
-              <a href="autre.html" class="hyperlink-nav">AUTRE</a>
+              <a href="#" class="hyperlink-nav">AUTRE</a>
             </li>
           </ul>
         </nav>
@@ -93,14 +95,20 @@
             </li>
           </ul>
         </nav>
+        <a href="#bio" class="link-arrow">
+          <span class="material-icons expand-arrow-header">expand_more</span>
+        </a>
       </header>
-      <div role="separator" class="mdc-list-divider"></div>
-      <section id="content">
-        <p class="mdc-typography--body1">
+      <div id="bio">
+        <p class="mdc-typography--body1 presentation">
+          <b>Site en conception.</b>
+          <br>
           Actuellement étudiant alternant pour la licence professionnelle ADSILLH (Administrateur et Développeur de Systèmes Informatiques à base de Logiciels Libres et Hybrides), et passionné par les nouvelles technologies. Mon objectif actuel est de poursuivre mes études dans le développement logiciel.
           <br>
           Je ne suis pas web designer (et je pense que ça se voit). Cependant j'aime ce qui est pratique, rapide et simple - j'espère qu'il s'agira de votre ressenti pendant le parcours de ce site web !
         </p>
+      </div>
+      <section id="content">
         <article id="mon-profil" class="article">
           <h3 id="mon-profil-title" class="mdc-typography--headline5 article-title">Mon profil</h3>
 
@@ -161,6 +169,100 @@
           <span class="material-icons expand-arrow">expand_more</span>
         </article>
       </section>
+      <div id="contact">
+        <p class="mdc-typography--body1 text-transition-contact">
+          <b>Contact.</b>
+          <br>
+          Evidemment pour le contact je ne vais pas librement donner mon adresse mail, ça serait un appel aux spam bots. A la place j'ai conçu un petit formulaire dont je récupère le contenu grâce à un web service PHP.
+          <br>
+          Un mail vous sera envoyé pour confirmer l'envoi de votre message. Et je recevrai moi-même un mail avec le contenu de votre message.
+        </p>
+      </div>
+      <section id="contact-section">
+        <p class="mdc-typography--body1">
+          Je suis désolé le service est un peu lent étant donné que je l'héberge moi-même sur une connexion ADSL, cependant il reste fonctionnel. Vous pouvez trouver en haut de page d'autres moyen de contact comme Linkedin ou Github.
+        </p>
+        <article class="formulaire-contact">
+          <form class="" action="http://service.maximeocafrain.com/WS/form_to_mail.php" method="post">
+            <div class="mdc-layout-grid">
+              <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+                  <label class="mdc-text-field mdc-text-field--outlined test" test data-mdc-auto-init="MDCTextField">
+                    <input type="text" name="nom" class="mdc-text-field__input" aria-labelledby="my-label-id" required>
+                    <span class="mdc-notched-outline">
+                      <span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="my-label-id">Nom</span>
+                      </span>
+                      <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+                  </label>
+                </div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+                  <label class="mdc-text-field mdc-text-field--outlined test" test data-mdc-auto-init="MDCTextField">
+                    <input type="text" name="prenom" class="mdc-text-field__input" aria-labelledby="my-label-id">
+                    <span class="mdc-notched-outline">
+                      <span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="my-label-id">Prenom</span>
+                      </span>
+                      <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+                  </label>
+                </div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+                  <label class="mdc-text-field mdc-text-field--outlined test" test data-mdc-auto-init="MDCTextField">
+                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="mail" class="mdc-text-field__input" aria-labelledby="my-label-id" title="Merci de compléter ce champ avec une adresse mail correcte." required>
+                    <span class="mdc-notched-outline">
+                      <span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="my-label-id">Mail</span>
+                      </span>
+                      <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+                  </label>
+                </div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+                  <label class="mdc-text-field mdc-text-field--textarea test" test data-mdc-auto-init="MDCTextField" >
+                  <textarea class="mdc-text-field__input" name="message" aria-labelledby="my-label-id" rows="8" cols="40" maxlength="300" title="Merci d'entrer un message à envoyer." Required></textarea>
+                  <span class="mdc-notched-outline">
+                    <span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch">
+                      <span class="mdc-floating-label" id="my-label-id">Message</span>
+                    </span>
+                    <span class="mdc-notched-outline__trailing"></span>
+                  </span>
+                </label>
+                <div class="mdc-text-field-helper-line">
+                  <div class="mdc-text-field-character-counter">0 / 300</div>
+                </div>
+                </div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+                  <div class="button-container">
+                    <div class="mdc-touch-target-wrapper form-buttons">
+                      <button type="reset" class="mdc-button">
+                         <div class="mdc-button__ripple"></div>
+                         <span class="mdc-button__label">Recommencer</span>
+                      </button>
+                    </div>
+                    <div class="mdc-touch-target-wrapper form-buttons">
+                      <button type="submit" name="submit" class="mdc-button mdc-button--raised">
+                        <div class="mdc-button__ripple"></div>
+                        <span class="mdc-button__label">Envoyer</span>
+                        <div class="mdc-button__touch"></div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </form>
+        </article>
+      </section>
+
+
       <footer class="mdc-typography--caption">
         ©Copyright 2050 par personne. Aucun droits reversés.
       </footer>

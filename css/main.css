@@ -1,15 +1,44 @@
 *{
   --mdc-typography-font-family: 'Muli';
+  --mdc-theme-primary: #1a237e;
+  --mdc-theme-on-primary: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
 }
 
 #site {
-  padding: 0 80px; ;
-  max-width: 800px;
-  margin: 0 auto;
+
 }
 
 #header {
   text-align: center;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  /* background: no-repeat url("../ressources/space.jpg"; */
+  background: #02062d;
+  color: white;
+  /* background-image: url("./ressources/space.jpg"); */
+}
+
+.titles h1 {
+
+  /* line-height: 30vh; */
+  margin: 0;
+}
+
+.titles h2 {
+}
+
+.titles {
+  padding-top: 25vh;
 }
 
 #site-title {
@@ -45,8 +74,32 @@
   padding: 20px 0px;
 }
 
-#content {
+#bio {
+  padding: 100px 30px;
+
+  background-image: url(../ressources/backgrounds/space.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#contact {
+  padding: 100px 0;
+  margin-top: 30px;
+  background-image: url(../ressources/backgrounds/mountains.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#content, #contact-section {
   text-align: justify;
+  padding: 0 80px; ;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .nav-list, .social-list {
@@ -64,12 +117,12 @@
   text-decoration: none;
 }
 .hyperlink-active, .hyperlink-nav:hover {
-  color: rgb(125, 125, 125) !important;
+  color: rgb(255, 255, 255) !important;
   text-decoration: underline;
 }
 
 .hyperlink-nav:visited, .hyperlink-nav:link {
-  color: #000000;
+  color: #ffffff;
 }
 
 .social-list {
@@ -87,7 +140,7 @@
 }
 
 .fa-github-square {
-  color: #211F1F;
+  color: #c9c9c9;
 }
 
 .fa-twitter-square {
@@ -108,7 +161,7 @@
   margin-bottom: -3px;
 }
 
-.expand-arrow:hover ,.fa-github-square:hover, .fa-twitter-square:hover, .fa-linkedin-square:hover, .fa-facebook-square:hover, .so-icon:hover, .mastodon-icon:hover {
+.expand-arrow:hover ,.fa-github-square:hover, .fa-twitter-square:hover, .fa-linkedin-square:hover, .fa-facebook-square:hover, .so-icon:hover, .mastodon-icon:hover, .expand-arrow-header:hover {
   opacity: 0.95;
   cursor: pointer;
   filter: drop-shadow(0.1rem 0.1rem 0.1rem #9e9e9e);
@@ -116,6 +169,22 @@
 
 .mdc-list-divider {
   margin: 30px;
+}
+
+.presentation {
+  color: white;
+
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.text-transition-contact {
+  color: black;
+
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
 }
 
 .mdc-typography--headline5 {
@@ -153,6 +222,12 @@
   margin-right: auto;
 }
 
+.expand-arrow-header {
+  position: absolute;
+  bottom: 5px;
+  font-size: 60px;
+}
+
 .article-more {
   transition: max-height 0.3s;
   overflow: hidden;
@@ -172,8 +247,31 @@
   margin-top: 5px;
 }
 
+.link-arrow {
+  color: white;
+}
 /* .nav-alt-list{
   margin: 0px;
   padding: 0px;
   font-size: 0.7em;
 } */
+
+
+
+
+/* Contact */
+
+.test {
+  width: 100%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: auto;
+  vertical-align: middle;
+}
+.form-buttons {
+  margin:3px;
+  margin-top: -10px;
+}
