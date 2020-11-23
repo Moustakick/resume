@@ -10,50 +10,9 @@
     <link href="./css/main.css" rel="stylesheet">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <script src="./scripts/page-up.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167765085-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-167765085-1');
-    </script>
     <title>Maxime Oçafrain</title>
   </head>
   <body class="mdc-typography">
-
-    <div class="mdc-dialog" data-mdc-auto-init="MDCDialog" id="consent">
-      <div class="mdc-dialog__container">
-        <div class="mdc-dialog__surface"
-          role="alertdialog"
-          aria-modal="true"
-          aria-labelledby="my-dialog-title"
-          aria-describedby="my-dialog-content">
-          <div class="mdc-dialog__content" id="my-dialog-content">
-            <p>
-              Ce site utilise des cookies pour Google Analytics (<a href="./mentions.html">mentions légales</a>), en cliquant sur <a style="font-weight: bold;">"Accepter"</a> pour continuer la navigation, <a style="font-weight: bold;">vous consentez à utiliser ces cookies</a>.
-            </p>
-            <p>
-              Ceci fait partie d'un <a style="font-weight: bold;"> exercice pour la licence ADSILLH</a>, je n'aime pas les cookies et je n'ai pas besoin d'analytique, je vais sûrement l'enlever plus tard (Oui, désolé M. Pierre Georges).
-            </p>
-            <p>
-              <a style="font-weight: bold;">Merci de votre compréhension.</a>
-            </p>
-          </div>
-          <div class="mdc-dialog__actions">
-            <button type="button" class="mdc-button mdc-dialog__button" onclick="window.location.href = 'http://www.google.com';" data-mdc-dialog-action="cancel">
-              <div class="mdc-button__ripple"></div>
-              <span class="mdc-button__label">Annuler</span>
-            </button>
-            <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="discard">
-              <div class="mdc-button__ripple"></div>
-              <span class="mdc-button__label">Accepter</span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="mdc-dialog__scrim"></div>
-    </div>
 
     <button id="page-up" onclick="goToAnchor('header')" class="mdc-icon-button material-icons page-up">arrow_upward</button>
     <div id="site">
@@ -353,12 +312,6 @@
 
     <script>
       window.mdc.autoInit();
-    </script>
-    <script>
-      //popup consent
-      const MDCDialog = mdc.dialog.MDCDialog;
-      const dialog = new MDCDialog(document.getElementById("consent"));
-      dialog.open();
     </script>
   </body>
 </html>
