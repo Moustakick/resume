@@ -19,6 +19,10 @@ hr {
   margin: 20px 0;
 }
 
+nav ul {
+  padding-left: 0;
+}
+
 #site {
 
 }
