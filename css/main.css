@@ -99,6 +99,7 @@ nav ul {
 
 #contact {
   padding: 100px 30px;
+  margin-bottom: -30px;
   /* margin-top: 30px; */
   background-image: url(../ressources/backgrounds/mountains.jpg);
   background-attachment: fixed;
